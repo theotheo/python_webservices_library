@@ -1,4 +1,4 @@
-from sugarcrm import *
+from .sugarcrm import *
 from .sugarmodule import *
 __version__ = "0.3.3"
 
