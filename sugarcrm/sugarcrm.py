@@ -128,7 +128,7 @@ class Sugarcrm:
         """
 
         args = {'user_auth': {'user_name': self._username,
-                              'password': self.password}}
+                              'password': hashlib.md5(self.password.encode('utf8')).hexdigest()}}
 
         x = self._sendRequest('login', args)
         try:
