@@ -75,7 +75,7 @@ class SugarModule:
                 try:
                     result['total'] = int(resp_data['total_count'], 10)
                 except TypeError as e:
-                    print resp_data
+                    print(resp_data)
             else:
                 result['total'] = 0
             if resp_data['result_count'] == 0:
